@@ -1,0 +1,46 @@
+http://localhost:3000/user
+
+query {
+  all_user {
+    id
+    name
+    email
+    total_amount
+  }
+}
+
+query {
+  one_user(id: "1") {
+    id
+    name
+    email
+    total_amount
+  }
+}
+
+mutation {
+  register_user(name: "asd", email: "asd", password: "1324") {
+    id
+    name
+    email
+    total_amount
+  }
+}
+
+mutation {
+  deposit_amount (id: "1", amount: 10.2) {
+    id
+    name
+    email
+    total_amount
+  }
+}
+
+mutation {
+  withdrawal_amount (id: "1", amount: 10.2) {
+    id
+    name
+    email
+    total_amount
+  }
+}
