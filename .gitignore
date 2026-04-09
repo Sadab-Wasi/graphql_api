@@ -1,2 +1,3 @@
 # All name folders, and files and folders in any name folder
 **/node_modules
+package-lock.json
